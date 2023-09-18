@@ -1,0 +1,27 @@
+{
+  "id": "cg3011ism4lk6m711khg",
+  "hub": "ibm-q",
+  "group": "open",
+  "project": "main",
+  "backend": "ibmq_belem",
+  "state": {
+    "status": "Completed"
+  },
+  "params": {
+    "shots": 1024,
+    "circuits": [
+      "OPENQASM 2.0;\ninclude \"qelib1.inc\";\n\nqreg q[2];\ncreg c[2];\nh q[0];\nx q[1];\nz q[0];\ncx q[0], q[1];\nry(pi/2) q[1];\nry(pi/2) q[0];\nmeasure q[1] -> c[1];\nmeasure q[0] -> c[0];"
+    ]
+  },
+  "program": {
+    "id": "circuit-runner"
+  },
+  "created": "2023-03-06T15:02:30.158004Z",
+  "tags": [
+    "composer-info:composer:true",
+    "composer-info:code-id:074da84ef0cc8fc89594fa589a31e67fadd7863584651f2dbf5dc5a023d5d1cf",
+    "composer-info:code-version-id:640600594c44497eabdc04e8"
+  ],
+  "cost": 14400,
+  "status": "Completed"
+}
